@@ -22,3 +22,21 @@ for r in range(row):
             dfs(r, c, visit)
             res += 1
 return res
+
+
+# DFS is an algorithm of recursion, if you wanted all combinations of numbers from this array:
+nums = [1, 2, 3, 4]
+# You would do something like this:
+res = []
+def dfs(cur):
+    if len(cur) == len(nums):
+        res.append(cur)
+        return
+    for n in nums:
+        if n not in cur:
+            cur.append(n)
+            dfs(cur.copy())
+            cur.pop()
+
+dfs([])
+return res
