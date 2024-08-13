@@ -1,0 +1,63 @@
+Arrays:
+- collection of data in order
+- usually the same type, but can be of different ones
+- lists in python ( [1, 2, 3] )
+- every element in an array has an index, used for finding elements, "zero-based" indexing
+- TIME COMPLEXITY:
+  * Read - O(1)
+  * Insert - O(n)
+  * Delete - O(n)
+
+Linked lists:
+- similar to arrays, difference being how they are stored in memory
+- no indexes, to finde an element you have to start at the beginning
+- TIME COMPLEXITY:
+  * Read - O(n)
+  * Insert - O(1)
+  * Delete - O(1)
+
+Hash maps:
+- you can choose your index, it is called a "key", "key-value" pairs
+- unordered, fast lookup
+- dictionaries in python ( {'key': 'value'} )
+- TIME COMPLEXITY:
+  * Read - O(1)
+  * Insert - O(1)
+  * Delete - O(1)
+
+Stacks:
+- stack of plates (first at the bottom, last at the top)
+- LIFO (last in, first out)
+- Good for these "plate problems"
+- TIME COMPLEXITY:
+  * Push (Add) - O(1)
+  * Pop (Remove) - O(1)
+  * Peek (Read top) - O(1)
+
+Queues:
+- like in a store
+- FIFO (first in, first out)
+- Good for queue problem
+- TIME COMPLEXITY:
+  * Enqueue (Add) - O(1)
+  * Dequeue (Remove) - O(1)
+  * Front (Read front) - O(1)
+
+Trees:
+- have nodes (leaves) and edges (branches), first node is called "root"
+- Parent child direction (upside down tree, more like a root system)
+- Binary trees, parent has max 2 children (binary)
+- Binary serach tree, same but bigger value is on the right, smaller on the left, guessing game (taking a half each time)
+- TIME COMPLEXITY:
+  * If it was going through every element when searching - O(n)
+  * Binary search - O(log n)
+
+Graphs:
+- also made of nodes and edges
+- trees and linked lists are types of graphs
+- nodes can have any amount of neighbours
+- Can be directed (to other nodes), also can be undirected
+- Cyclic nodes (two nodes point to each other)
+- Edges can be weighted (paths have values)
+- COMPLICATED
+- Used in shortest path problems (each edge has a distance, shortest distance)
